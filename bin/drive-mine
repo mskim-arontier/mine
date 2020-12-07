@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+from arontier.mine import hello
+
+
+hello.read_data()
