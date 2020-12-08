@@ -5,7 +5,13 @@ def say():
     print("")
     print("")
 
+
 def read_data():
-    with open('../data/data.txt'. 'rt') as f:
+    import os
+    for r, d, f in os.walk(os.getcwd()):
+        for file in f:
+            if 'data.txt' in file:
+                fn = os.path.join(r, file)
+    with open(fn, 'rt') as f:
         for line in f:
             print(line)

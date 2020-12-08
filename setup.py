@@ -22,8 +22,8 @@ def read_long_description(path):
 setup(
     name='mine',
     version=find_version('arontier/mine/__init__.py'),
-    # packages=find_namespace_packages(include=['arontier.*']),
-    packages='arontier/mine',
+    packages=find_namespace_packages(include=['arontier.*']),
+    # packages='arontier/mine',
     include_package_data=True,
     license='Arontier Proprietary License',
     description='Arontier Python package template',
